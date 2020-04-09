@@ -34,7 +34,7 @@
         <?php foreach ($links as $link) {
             echo "<li><a href=\"{$link['href']}\"> {$link['title']} </a></li>\n";
               }
-              echo "<li><a>"."Поточна дата та час:".date('d.m.Y H.i')."</a></li>";
+              echo "<li><a id=\"time\">"."Поточна дата та час:".date('d.m.Y H:i:s')."</a></li>";
               echo "<li><a>"."Ваш IP:".$_SERVER['REMOTE_ADDR']."</a></li>";
         ?>
       </ul>
@@ -44,10 +44,10 @@
         <div class="choice">
           <h1>Оберіть, що вас цікавить!</h1>
         </div>
-        <div class="choice">
+        <div class="choice" id="bio">
           <h2>Біографія</h2>
         </div>
-        <div class="choice">
+        <div class="choice" id="">
           <h2>Освіта</h2>
         </div>
         <div class="choice">
@@ -59,60 +59,7 @@
       </div>
       
       <div class="info_block">
-        <h2>HELLO</h2>
-          <h2>HELLO</h2>
-            <h2>HELLO</h2>
-              <h2>HELLO</h2>
-                <h2>HELLO</h2>
-                  <h2>HELLO</h2>
-                    <h2>HELLO</h2>
-                      <h2>HELLO</h2>
-                        <h2>HELLO</h2>
-                          <h2>HELLO</h2>
-                            <h2>HELLO</h2>
-                              <h2>HELLO</h2>
-                                <h2>HELLO</h2>
-                                  <h2>HELLO</h2>
-                                    <h2>HELLO</h2>
-                                      <h2>HELLO</h2>
-                                        <h2>HELLO</h2>
-                                          <h2>HELLO</h2>
-                                            <h2>HELLO</h2>
-                                              <h2>HELLO</h2>
-                                                <h2>HELLO</h2>
-                                                  <h2>HELLO</h2>
-                                                    <h2>HELLO</h2>
-                                                      <h2>HELLO</h2>
-                                                        <h2>HELLO</h2>
-                                                          <h2>HELLO</h2>
-                                                            <h2>HELLO</h2>
-                                                              <h2>HELLO</h2>
-                                                                <h2>HELLO</h2>
-                                                                  <h2>HELLO</h2>
-                                                                    <h2>HELLO</h2>
-                                                                      <h2>HELLO</h2>
-                                                                        <h2>HELLO</h2>
-                                                                          <h2>HELLO</h2>
-                                                                            <h2>HELLO</h2>
-                                                                              <h2>HELLO</h2>
-                                                                                <h2>HELLO</h2>
-                                                                                  <h2>HELLO</h2>
-                                                                                    <h2>HELLO</h2>
-                                                                                      <h2>HELLO</h2>
-                                                                                        <h2>HELLO</h2>
-                                                                                          <h2>HELLO</h2>
-                                                                                            <h2>HELLO</h2>
-                                                                                              <h2>HELLO</h2>
-                                                                                                <h2>HELLO</h2>
-                                                                                                  <h2>HELLO</h2>
-                                                                                                    <h2>HELLO</h2>
-                                                                                                      <h2>HELLO</h2>
-                                                                                                        <h2>HELLO</h2>
-                                                                                                          <h2>HELLO</h2>
-                                                                                                            <h2>HELLO</h2>
-                                                                                                              <h2>HELLO</h2>
-                                                                                                                <h2>HELLO</h2>
-                                                                                                                  <h2>HELLO</h2>
+        <h2>Hello, World!</h2>
       </div>
     </div>
     
@@ -122,5 +69,18 @@
         <li><a>Contact email: saske.pawlyuk2012@gmail.com</a></li>
       </ul>
     </footer>
+    <script>  
+      function show(){
+        $.ajax({  
+          url: "time.php",  
+          cache: false,  
+          success: function(html){  $("#time").html(html); }  
+        });  
+      }  
+      $(document).ready(function(){
+        show();
+        setInterval('show()',1000);  
+      });  
+    </script> 
   </body>
 </html>
