@@ -34,32 +34,25 @@
         <?php foreach ($links as $link) {
             echo "<li><a href=\"{$link['href']}\"> {$link['title']} </a></li>\n";
               }
-              echo "<li><a id=\"time\">"."Поточна дата та час:".date('d.m.Y H:i:s')."</a></li>";
+              echo "<li><a id=\"time\">"."Поточна дата та час:".date('d.m.Y H:i')."</a></li>";
               echo "<li><a>"."Ваш IP:".$_SERVER['REMOTE_ADDR']."</a></li>";
         ?>
       </ul>
     </nav>
+    
     <div class="wall">
-      <div class="choice_block">
+      <div class="choices_block">
         <div class="choice">
-          <h1>Оберіть, що вас цікавить!</h1>
-        </div>
-        <div class="choice" id="bio">
-          <h2>Біографія</h2>
-        </div>
-        <div class="choice" id="">
-          <h2>Освіта</h2>
+          <h1>Оберіть, що вам цікаво!</h1>  
         </div>
         <div class="choice">
-          <h2>Хоббі та захоплення</h2>
+          <input type="button" id="bio" value="Біографія">
         </div>
-        <div class="choice">
-          <h2>Місцезнаходження</h2>
-        </div>
+        <a id="bio" href="#">Біографія</a>
       </div>
       
-      <div class="info_block">
-        <h2>Hello, World!</h2>
+      <div class="info_block" id="info">
+        <h1 class="T-center">Натисніть на одну з кнопок зліва!</h1>
       </div>
     </div>
     
@@ -70,16 +63,17 @@
       </ul>
     </footer>
     <script>  
-      function show(){
-        $.ajax({  
-          url: "time.php",  
-          cache: false,  
-          success: function(html){  $("#time").html(html); }  
-        });  
-      }  
       $(document).ready(function(){
-        show();
-        setInterval('show()',1000);  
+        
+        $('#bio').click(function(){
+          $.ajax({
+            url: 'bio.php',
+            cache: false,
+            success: function(html){
+              $("#info").html(html);
+            }
+          });
+        });
       });  
     </script> 
   </body>
