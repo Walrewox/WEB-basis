@@ -5,6 +5,7 @@
     <title>Домашня сторінка</title>
     <link rel="stylesheet" href="/css/master.css">
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/main_content.js"></script>
   </head>
   <body>
     <?php $links = [[
@@ -48,8 +49,11 @@
         <div class="choice">
           <input type="button" id="bio" value="Біографія">
         </div>
-        <a id="bio" href="#">Біографія</a>
+        <div class="choice">
+          <input type="button" id="edu" value="Освіта">
+        </div>
       </div>
+      <!-- TODO <script type="text/javascript">button.onclick = active(this.id);</script> -->
       
       <div class="info_block" id="info">
         <h1 class="T-center">Натисніть на одну з кнопок зліва!</h1>
@@ -62,19 +66,5 @@
         <li><a>Contact email: saske.pawlyuk2012@gmail.com</a></li>
       </ul>
     </footer>
-    <script>  
-      $(document).ready(function(){
-        
-        $('#bio').click(function(){
-          $.ajax({
-            url: 'bio.php',
-            cache: false,
-            success: function(html){
-              $("#info").html(html);
-            }
-          });
-        });
-      });  
-    </script> 
   </body>
 </html>
