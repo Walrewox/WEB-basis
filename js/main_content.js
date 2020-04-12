@@ -27,4 +27,13 @@ $(document).ready(function(){
       }
     });
   });
+  $('#author').click(function(){
+    $.ajax({
+      url: 'content/author.php',
+      cache: false,
+      success: function(html){
+        $("#info").html(html);
+      }
+    });
+  });
 }); 

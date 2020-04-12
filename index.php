@@ -17,16 +17,9 @@
                       'title'=> 'Книжна полиця'
                     ],
                     [ 
-                      'href' => 'games.php',
-                      'title'=> 'Ігри'
-                    ],
-                    [ 
                       'href' =>'music.php',
                       'title'=>'Музика']
                     ];
-          $quotes = ['img/quote1.jpeg',
-                     'img/quote2.jpg',
-                     'img/quote3.jpg']; 
           $colors = ["#ff0000", "#00ff00", "#0000ff"]; 
           shuffle($links);
      ?>
@@ -47,10 +40,16 @@
           <h1>Оберіть, що вам цікаво!</h1>  
         </div>
         <div class="choice">
-          <input type="button" id="bio" value="Біографія">
+          <input type="button" id="author" value="Автор">
+        </div>
+        <div class="choice">
+          <input type="button" id="bio" value="Надихаючі особистості">
         </div>
         <div class="choice">
           <input type="button" id="edu" value="Освіта">
+        </div>
+        <div class="choice">
+          <input type="button" id="hobby" value="Хобі">
         </div>
       </div>
       <!-- TODO <script type="text/javascript">button.onclick = active(this.id);</script> -->
