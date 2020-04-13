@@ -79,6 +79,7 @@ body{
   outline: none;
   font-size: 28px;
   font-family: times;
+  cursor: pointer;
 }
 
 
@@ -86,7 +87,7 @@ body{
   background-color: #ECF8F8;
   height: 100%;
   width: 75%;
-  font-size: 14px;
+  font-size: 16px;
   display: inline-block;
   vertical-align: top;
   overflow-y: scroll; 

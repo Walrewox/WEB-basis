@@ -37,18 +37,18 @@
     <div class="wall">
       <div class="choices_block">
         <div class="choice">
-          <h1>Оберіть, що вам цікаво!</h1>  
+          <h1>Головна сторінка</h1>  
         </div>
-        <div class="choice">
+        <div class="choice" id="author">
           <input type="button" id="author" value="Автор">
         </div>
-        <div class="choice">
+        <div class="choice" id="bio">
           <input type="button" id="bio" value="Надихаючі особистості">
         </div>
-        <div class="choice">
+        <div class="choice" id="edu">
           <input type="button" id="edu" value="Освіта">
         </div>
-        <div class="choice">
+        <div class="choice" id="hobby">
           <input type="button" id="hobby" value="Хобі">
         </div>
       </div>
