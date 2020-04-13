@@ -2,7 +2,7 @@
 <html lang="uk" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Домашня сторінка</title>
+    <title>Головна</title>
     <link rel="stylesheet" href="/css/master.css">
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/main_content.js"></script>
@@ -20,7 +20,6 @@
                       'href' =>'music.php',
                       'title'=>'Музика']
                     ];
-          $colors = ["#ff0000", "#00ff00", "#0000ff"]; 
           shuffle($links);
      ?>
     <nav class="menu">
@@ -52,8 +51,6 @@
           <input type="button" id="hobby" value="Хобі">
         </div>
       </div>
-      <!-- TODO <script type="text/javascript">button.onclick = active(this.id);</script> -->
-      
       <div class="info_block" id="info">
         <h1 class="T-center">Натисніть на одну з кнопок зліва!</h1>
       </div>
