@@ -8,7 +8,7 @@
        }
        elseif ($i==1) {
          echo "<p class=\"T-center\"><img src=\"$urls[$i]\" alt=\"Упс, зображення кудись зникло!\" width=75% height=75%}><p>";
-         echo "<p><b>Крістофер Вінсент Метцен</b> (англ. Christopher Vincent Metzen; народився 22 листопада 1973, США) — американський ґейм-дизайнер, художник, голосовий актор та автор, відомий своєю роботою над вигаданими всесвітами та сценаріями для трьох відомих медіафраншиз Blizzard Entertainment: Warcraft, Diablo and StarCraft.</p>";
+         echo "<p><b>Крістофер Вінсент Метцен</b> (англ. Christopher Vincent Metzen; народився 22 листопада 1973, США) — американський ґейм-дизайнер, художник, голосовий актор та автор, відомий своєю роботою над вигаданими всесвітами та сценаріями для трьох відомих медіафраншиз Blizzard Entertainment: Warcraft, Diablo і StarCraft.</p>";
        }
        else{
          echo "<p class=\"T-center\"><img src=\"$urls[$i]\" alt=\"Упс, зображення кудись зникло!\" width=35% height=35%}></p>";
