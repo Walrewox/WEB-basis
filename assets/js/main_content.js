@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('#author').click(function(){
     $.ajax({
       url: 'ajax-content/author.html',
-      cache: true,
+      // cache: false,
       success: function(html){
         $('#info').html(html);
       }
@@ -14,7 +14,7 @@ $(document).ready(function(){
   $('#bio').click(function(){
     $.ajax({
       url: 'ajax-content/bio.php',
-      cache: true,
+      // cache: false,
       success: function(html){
         $('#info').html(html);
       }
@@ -25,7 +25,7 @@ $(document).ready(function(){
   $('#edu').click(function(){
     $.ajax({
       url: 'ajax-content/edu.html',
-      cache: true,
+      // cache: false,
       success: function(html){
         $('#info').html(html);
       }
@@ -37,7 +37,7 @@ $(document).ready(function(){
   $('#hobby').click(function(){
     $.ajax({
       url: 'ajax-content/hobby.html',
-      cache: true,
+      // cache: false,
       success: function(html){
         $('#info').html(html);
       }

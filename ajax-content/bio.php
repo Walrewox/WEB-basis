@@ -1,6 +1,6 @@
-<?php  $urls = ['img/photos/Linus.jpg',
-                'img/photos/Chris.jpg',
-                'img/photos/Jim.jpg'];
+<?php  $urls = ['assets/img/photos/Linus.jpg',
+                'assets/img/photos/Chris.jpg',
+                'assets/img/photos/Jim.jpg'];
        $i = rand(0,2);
        if ($i==0) {
          echo "<p class=\"T-center\"><img src=\"$urls[$i]\" alt=\"Лінус Торвальдс\"}></p>";

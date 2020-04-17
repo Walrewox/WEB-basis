@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="/css/master.css">
-    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="/js/main_content.js"></script>
+    <link rel="stylesheet" href="assets/css/master.css">
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/main_content.js"></script>
   </head>
   <body>
     <?php $links = [[
