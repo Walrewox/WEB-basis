@@ -1,54 +1,49 @@
 $(document).ready(function(){
   $('#author').click(function(){
     $.ajax({
-      url: 'ajax-content/author.php',
-      cache: false,
+      url: 'ajax-content/author.html',
+      cache: true,
       success: function(html){
         $('#info').html(html);
       }
     });
-    $('#bio').removeClass('choice-active');
-    $('#edu').removeClass('choice-active');
-    $('#hobby').removeClass('choice-active');
+    $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
+    window.history.pushState(null,null,'author.html');
   });
   $('#bio').click(function(){
     $.ajax({
       url: 'ajax-content/bio.php',
-      cache: false,
+      cache: true,
       success: function(html){
         $('#info').html(html);
       }
     });
-    $('#author').removeClass('choice-active');
-    $('#edu').removeClass('choice-active');
-    $('#hobby').removeClass('choice-active');
+    $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
   });
   $('#edu').click(function(){
     $.ajax({
-      url: 'ajax-content/edu.php',
-      cache: false,
+      url: 'ajax-content/edu.html',
+      cache: true,
       success: function(html){
         $('#info').html(html);
       }
     });
-    $('#author').removeClass('choice-active');
-    $('#bio').removeClass('choice-active');
-    $('#hobby').removeClass('choice-active');
+    $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
+    window.history.pushState(null,null,'education.html');
   });
   $('#hobby').click(function(){
     $.ajax({
-      url: 'ajax-content/hobby.php',
-      cache: false,
+      url: 'ajax-content/hobby.html',
+      cache: true,
       success: function(html){
         $('#info').html(html);
       }
     });
-    $('#author').removeClass('choice-active');
-    $('#bio').removeClass('choice-active');
-    $('#edu').removeClass('choice-active');
+    $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
+    window.history.pushState(null,null,'hobby.html');
   });
 }); 
