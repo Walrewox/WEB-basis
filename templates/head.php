@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="assets/css/master.css">
     <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/js/main_content.js"></script>
+    <script type="text/javascript" src="assets/js/time.js"></script>
+      
+    </script>
   </head>
   <body>
     <?php $links = [[
