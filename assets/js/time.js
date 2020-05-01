@@ -7,5 +7,5 @@ function show(){
 }  
 $(document).ready(function(){
   show();
-  setInterval('show()',60000);  
+  setInterval('show()',30000);  
 });

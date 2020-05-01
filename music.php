@@ -1,6 +1,6 @@
 <?php 
   $title = "Музика";
-  require('templates/head.php');?>
+  require('requires/head.php');?>
       <div class="choices_block">
         <div class="choice">
           <h1>Музика</h1>  
@@ -21,4 +21,4 @@
       <div class="info_block" id="info">
         <h1 class="T-center">Натисніть на одну з кнопок зліва!</h1>
       </div>
-<?php require('templates/foot.html') ?>
+<?php require('requires/foot.html') ?>

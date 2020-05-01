@@ -7,8 +7,7 @@
     <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/js/main_content.js"></script>
     <script type="text/javascript" src="assets/js/time.js"></script>
-      
-    </script>
+    <script type="text/javascript" src="assets/js/history.js"></script>
   </head>
   <body>
     <?php $links = [[
@@ -36,4 +35,4 @@
       </ul>
     </nav>
     
-    <div class="wall">
+    <div class="wall" id="wall">
