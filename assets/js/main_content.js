@@ -8,7 +8,7 @@ $(document).ready(function(){
     });
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
-    var state = 'author';
+    
     window.history.pushState(state,null,'author');
   });
   $('#bio').click(function(){
@@ -20,7 +20,7 @@ $(document).ready(function(){
     });
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
-    var state = 'biography';
+    
     window.history.pushState(state,null,'bio');
   });
   $('#edu').click(function(){
@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
-    var state = 'education';
+    
     window.history.pushState(state,null,'edu');
   });
   $('#hobby').click(function(){
@@ -44,7 +44,7 @@ $(document).ready(function(){
     });
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
-    var state = 'hobby';
+    
     window.history.pushState(state,null,'hobby');
   });
 }); 
