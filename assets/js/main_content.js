@@ -9,7 +9,7 @@ $(document).ready(function(){
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
     
-    window.history.pushState(state,null,'author');
+    window.history.pushState('author',null,'author');
   });
   $('#bio').click(function(){
     $.ajax({
@@ -21,7 +21,7 @@ $(document).ready(function(){
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
     
-    window.history.pushState(state,null,'bio');
+    window.history.pushState('biography',null,'bio');
   });
   $('#edu').click(function(){
     $.ajax({
@@ -33,7 +33,7 @@ $(document).ready(function(){
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
     
-    window.history.pushState(state,null,'edu');
+    window.history.pushState('education',null,'edu');
   });
   $('#hobby').click(function(){
     $.ajax({
@@ -45,6 +45,6 @@ $(document).ready(function(){
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
     
-    window.history.pushState(state,null,'hobby');
+    window.history.pushState('hobby',null,'hobby');
   });
 }); 
