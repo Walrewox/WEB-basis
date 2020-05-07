@@ -21,7 +21,7 @@ $(document).ready(function(){
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
     
-    window.history.pushState('biography',null,'bio');
+    window.history.pushState('bio',null,'bio');
   });
   $('#edu').click(function(){
     $.ajax({
@@ -33,7 +33,7 @@ $(document).ready(function(){
     $("*").removeClass('choice-active');
     $(this).addClass("choice-active");
     
-    window.history.pushState('education',null,'edu');
+    window.history.pushState('edu',null,'edu');
   });
   $('#hobby').click(function(){
     $.ajax({
