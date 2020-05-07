@@ -12,16 +12,16 @@ window.addEventListener('popstate', (event) => {
   console.log("location: " + document.location + ", state: " + event.state);
   switch (event.state) {
     case 'author':
-      content('ajax-content/author.html','#author');
+      content('ajax-content/index/author.html','#author');
       break;
     case 'biography':
-      content('ajax-content/bio.php','#bio')
+      content('ajax-content/index/bio.php','#bio')
       break;
     case 'education':
-      content('ajax-content/edu.html','#edu');
+      content('ajax-content/index/edu.html','#edu');
       break;
     case 'hobby':
-      content('ajax-content/hobby.html','#hobby');
+      content('ajax-content/index/hobby.html','#hobby');
       break;
   }
 });
