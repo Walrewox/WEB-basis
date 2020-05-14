@@ -10,7 +10,7 @@ body{
 }
 .menu ul{
   list-style: none;
-  display: -webkit-flex; 
+  display: -webkit-flex;
   display: flex;
   background: #E7D8C9;
   padding-left: 0;
@@ -40,7 +40,7 @@ body{
 }
 
 .choices_block{
-  background-color: #EEE4E1; 
+  background-color: #EEE4E1;
   height: 100%;
   width: 25%;
   margin: 0px;
@@ -81,7 +81,20 @@ body{
   font-family: times;
   cursor: pointer;
 }
-
+.choice li{
+  list-style-type: none;
+}
+.choice a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  font-size: 28px;
+  font-family: times;
+  cursor: pointer;
+}
 
 .info_block{
   background-color: #ECF8F8;
@@ -90,7 +103,7 @@ body{
   font-size: 16px;
   display: inline-block;
   vertical-align: top;
-  overflow-y: scroll; 
+  overflow-y: scroll;
   text-align: justify;
 }
 .info_block img{
@@ -105,13 +118,13 @@ body{
     width: 7px;
 }
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
-} 
+}
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(#c98b21, 0.81); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: rgba(#c98b21, 0.81);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
