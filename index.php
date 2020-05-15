@@ -22,6 +22,7 @@
                     'id' => 'hobby'
                   ]
                   ];
+                  shuffle($navigation);
 ?>
       <div class="choices_block">
         <div class="choice">

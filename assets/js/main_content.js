@@ -1,19 +1,21 @@
-let linkButtons = Array.from(document.getElementByClassname('choice'));
+let linkButtons = Array.from(document.getElementsByClassName('choice'));
+
 function selectButton(id){
-  linkButtons.forEach()
+  linkButtons.forEach(
+    b => {b.classList.toggle(choiceActive)}
+  );
 }
 
 $(document).ready(function(){
   $('nav li a').click(function(e) {
              e.preventDefault();
-
              var href = $(this).attr("href");
 
               $.ajax({
                 url: href,
                 type: GET,
-                success: function(data){
-                    wrapper.html(data);
+                success: function(html){
+                    $('#info').html(html);
                 }
               });
 
