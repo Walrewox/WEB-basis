@@ -2,22 +2,22 @@
   $title = "Головна";
   require('requires/head.php');
   $navigation = [[
-                    'href' => '/author/',
+                    'href' => '/author.html/',
                     'title'=> 'Автор',
                     'id' => 'author'
                   ],
                   [
-                    'href' => '/bio/',
+                    'href' => '/bio.php/',
                     'title'=> 'Надихаючі особистості',
                     'id' => 'bio'
                   ],
                   [
-                    'href' =>'/edu/',
+                    'href' =>'/edu.html/',
                     'title'=>'Освіта',
                     'id' => 'edu'
                   ],
                   [
-                    'href' =>'/hobby/',
+                    'href' =>'/hobby.html/',
                     'title'=>'Хобі',
                     'id' => 'hobby'
                   ]
