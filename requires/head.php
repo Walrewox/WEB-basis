@@ -7,18 +7,17 @@
     <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/js/main_content.js"></script>
     <script type="text/javascript" src="assets/js/time.js"></script>
-    <script type="text/javascript" src="assets/js/history.js"></script>
   </head>
   <body>
     <?php $links = [[
                       'href' => 'index.php',
                       'title'=> 'Головна'
-                    ], 
+                    ],
                     [
                       'href' => 'bookshelf.php',
                       'title'=> 'Книжна полиця'
                     ],
-                    [ 
+                    [
                       'href' =>'music.php',
                       'title'=>'Музика']
                     ];
@@ -34,5 +33,5 @@
         ?>
       </ul>
     </nav>
-    
+
     <div class="wall" id="wall">
