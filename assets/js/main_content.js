@@ -2,14 +2,10 @@ var buttons = Array.from(document.getElementsByClassName('choice'));
 
 function updateInfo(id){
   $.ajax({
-    url: 'ajax-content/'+id+'.html',
+    url: 'ajax-content/'+id+'.php',
     success: function(html){
       $('#info').html(html);
 
-    },
-    error: function(html){
-      url: 'ajax-content/'+id+'.php',
-      $("#info").html(html);
     }
   });
 }
