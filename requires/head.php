@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/dark.css" id="theme-link">
     <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/js/time.js"></script>
   </head>
@@ -17,9 +18,9 @@
                       'title'=> 'Книжна полиця'
                     ],
                     [
-                      'href' =>'music.php',
-                      'title'=>'Музика']
-                    ];
+                      'href' => 'music.php',
+                      'title'=> 'Музика'
+                    ]];
           shuffle($links);
      ?>
     <nav class="menu">
@@ -29,6 +30,7 @@
               }
               echo "<li><a id=\"time\">"."Поточна дата та час:".date('d.m.Y H:i')."</a></li>";
               echo "<li><a>"."Ваш IP:".$_SERVER['REMOTE_ADDR']."</a></li>";
+              echo "<li><a href=''>Змінити тему</a>"
         ?>
       </ul>
     </nav>

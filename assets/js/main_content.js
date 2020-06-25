@@ -5,7 +5,8 @@ function updateInfo(id){
     url: 'ajax-content/'+id+'.php',
     success: function(html){
       $('#info').html(html);
-
+      $("*").removeClass('choice-active');
+      $("#"+id).addClass("choice-active");
     }
   });
 }
@@ -21,5 +22,9 @@ buttons.forEach(b => {
 });
 
 window.addEventListener('popstate', e => {
+    updateInfo(e.state.id);
+});
+
+document.addEventListener("DOMContentLoaded", e =>{
     updateInfo(e.state.id);
 });
