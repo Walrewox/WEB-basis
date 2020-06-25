@@ -10,6 +10,6 @@
   <div class="choice" id="classic">Класична</div>
 </div>
 <div class="info_block" id="info">
-  <h1 class="T-center">Натисніть на одну з кнопок зліва!</h1>
+  <h1 class="text-center">Натисніть на одну з кнопок зліва!</h1>
 </div>
 <?php require('requires/foot.html') ?>

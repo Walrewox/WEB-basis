@@ -25,8 +25,8 @@
      ?>
     <nav class="menu">
       <ul>
-        <?php foreach ($links as $link) {
-            echo "<li><a href=\"{$link['href']}\"> {$link['title']} </a></li>\n";
+        <?php foreach ($links as $link){
+                echo "<li><a href=\"{$link['href']}\"> {$link['title']} </a></li>\n";
               }
               echo "<li><a id=\"time\">"."Поточна дата та час:".date('d.m.Y H:i')."</a></li>";
               echo "<li><a>"."Ваш IP:".$_SERVER['REMOTE_ADDR']."</a></li>";
