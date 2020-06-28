@@ -1,4 +1,4 @@
-<p class="T-center">
+<p class="text-center">
   <img src="../assets/img/photos/school.jpg" alt="Мошнівська загальноосвітня школа" width=50% height=50%>
   <br>
   <i>Моя школа</i>
@@ -16,7 +16,7 @@
   <br>
   Наступним кроком була вища освіта...
 </p>
-<p class="T-center">
+<p class="text-center">
   <img src="../assets/img/photos/university.jpg" alt="Університет автора" width=50% height=50%}>
   <br>
   <i>Вхід до мого університету</i>

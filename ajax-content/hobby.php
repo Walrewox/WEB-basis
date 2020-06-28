@@ -1,4 +1,4 @@
-<p class="T-center">
+<p class="text-center">
   <img src="../assets/img/pictures/retro.jpg" alt="Прибулець з гри Space Invaders" width=50% height=50%>
   <br>
   <i>Space invader</i>
@@ -12,7 +12,7 @@
   інших людей, що їх відвідують.
 </p>
 
-<p class="T-center">
+<p class="text-center">
   <img src="../assets/img/pictures/book.jpg" alt="Черв'як в окулярах на книжці" width=50% height=50%}>
   <br>
 </p>
